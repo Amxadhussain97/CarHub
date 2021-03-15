@@ -38,7 +38,8 @@
                         <!-- main slider carousel nav controls -->
                         <ul class="carousel-indicators car-properties list-inline nav nav-justified">
                             <li class="list-inline-item active">
-                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#carDetailsSlider">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0"
+                                    data-target="#carDetailsSlider">
                                     <img src="{% static 'img/car/car-1.jpg' %}" class="img-fluid" alt="small-car">
                                 </a>
                             </li>
@@ -58,9 +59,11 @@
             </div>
             <div class="col-xl-7 col-lg-6 align-self-center">
                 <div class="best-used-car">
-                    <h3>Welcome to <span>Car Zone</span></h3>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
-                    <p class="mb-0">electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker</p>
+                    <h3>Welcome to <span>CarHub</span></h3>
+                    <br>
+                    <p>We are here to deliver the best possible car trading experience. Our aim is to provide you a
+                        smooth experience of choosing your desired car with a great value for money experience.</p>
+                    <p class="mb-0">Get the best deal available all over the country and TRADE YOUR CAR HERE.</p>
                 </div>
             </div>
         </div>
@@ -76,12 +79,13 @@
         <!-- Main title -->
         <div class="main-title">
             <h1>Executive <span>Team</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            
         </div>
         <!-- Slick slider area start -->
         <div class="slick-slider-area clearfix">
-            <div class="row slick-carousel" data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
-            {% for team in teams %}
+            <div class="row slick-carousel"
+                data-slick='{"slidesToShow": 4, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                {% for team in teams %}
                 <div class="slick-slide-item">
                     <div class="team-1">
                         <div class="photo">
@@ -89,9 +93,12 @@
                                 <img src="{{ team.photo.url }}" alt="team-1" class="img-fluid" style="height: 250px;">
                             </a>
                             <div class="social-list clearfix">
-                                <a href="{{ team.facebook_link }}" target="_blank" class="facebook-bg"><i class="fa fa-facebook"></i></a>
-                                <a href="{{ team.twitter_link }}" target="_blank" class="twitter-bg"><i class="fa fa-twitter"></i></a>
-                                <a href="{{ team.google_link }}" target="_blank" class="google-bg"><i class="fa fa-google"></i></a>
+                                <a href="{{ team.facebook_link }}" target="_blank" class="facebook-bg"><i
+                                        class="fa fa-facebook"></i></a>
+                                <a href="{{ team.twitter_link }}" target="_blank" class="twitter-bg"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="{{ team.google_link }}" target="_blank" class="google-bg"><i
+                                        class="fa fa-google"></i></a>
                             </div>
                         </div>
                         <div class="details">
@@ -100,10 +107,10 @@
                         </div>
                     </div>
                 </div>
-            {% endfor  %}
-                
-                
-                
+                {% endfor %}
+
+
+
             </div>
         </div>
     </div>
