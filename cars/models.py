@@ -8,14 +8,7 @@ class Car(models.Model):
     
     state_choice = (
         
-    ('Sylhet', 'Sylhet'),
-    ('Dhaka', 'Dhaka'),
-    ('Chattagram', 'Chattagram'),
-    ('Khulna', 'Khulna'),
-    ('Barishal', 'Barishal'),
-    ('Rangpur', 'Rangpur'),
-    ('Mymensingh', 'Mymensingh'),
-    ('Rajshahi', 'Rajshahi'),
+    ('Bangladesh', 'Bangladesh'),
 
     )
     
